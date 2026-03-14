@@ -134,3 +134,55 @@ header.hero{
     display: inline-block;
     
 }
+main{
+    background: black
+}
+section{
+    padding: 96px 80px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.section-label{
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: gold;
+    margin-bottom: 13px;
+
+}
+.section-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 40px;
+
+}
+.about-grid{
+    display: grid;
+    grid-template-columns: 1.1fr o.9fr;
+    gap: 80px;
+    align-items: center;
+
+
+}
+.about-text p{
+    color: var(--muted);
+    line-height: 1.9;
+    margin-bottom: 18px;
+    font-size: 15px;
+
+}
+.photo-card{
+    position: relative;
+}
+.photo-card img{
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    object-position: cover top;
+    border-radius: 4px;
+    display: block;
+    filter: saturate(0.9);
+
+}
