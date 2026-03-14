@@ -1,0 +1,136 @@
+:root{
+    --gold: #c9a84c;
+    --dark: #0a0a0a;
+    --text: #f0ece4;
+    --muted: #9a9590;
+    --border: rgba(201,168,76,0.22)
+}
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+    font-family: 'DM sans', sans-serif;
+    background: var(--dark);
+    color: var(--text)
+}
+nav{
+    position: fixed;
+    top: 0; left: o; right: 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 21px 64px;
+    background: transparent;
+    
+}
+nav.scrolled{
+    background: rgba(10, 10, 10,0.91);
+    backdrop-filter: blur (16px);
+    border-bottom: 1px solid;
+
+}
+nav.solid{
+    background: rgba(10, 10, 10,0.91);
+    backdrop-filter: blur (16px);
+    border-bottom: 1px;
+
+}
+nav.logo{
+    font-family: italic;
+    font-size: 24px;
+    font-weight: 600;
+    color: gold;
+    letter-spacing: 1px;
+    text-decoration:none ;
+
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 42px;
+
+}
+nav ul li a{
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(240, 240, 230,0.71);
+    text-decoration: none;
+    position: relative;
+
+}
+header.hero{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+
+}
+.hero-bg{
+    position: absolute;
+    inset: 0;
+    background-image:url(photo.png);
+    background-size: cover;
+    background-position: center top;
+    filter:brightness(0.55) saturate(0.89)
+
+}
+.hero-tint{
+    position:absolute;
+    inset: 0;
+    background: linear-gradient(top to bottom,
+    rgba(10,10,10,0.15)0%
+    rgba(10,10,10,0.05)35%
+    rgba(10,10,10,0.1)70%
+    rgba(10,10,10,0.92)100%);
+}
+.hero-content h1{
+    font-family: 'Garamond' , serif;
+    font-size: 96px;
+    font-weight: 300;
+    line-height: 1.0;
+    margin-bottom: 16px;
+}
+.hero-content h1 strong{
+    font-weight: 700;
+    color: gold
+
+}
+.hero-content p{
+    font-size: 16px;
+    color: rgba(240,240,224,0.5);
+    line-height: 1.8;
+    max-width: 440px;
+    margin-bottom: 32px;
+}
+.hero-btns{
+    display: flex;
+    gap: 16px;
+
+}
+.btn-primary{
+    background: gold
+    color: white
+    padding: 13px 32px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+.btn-ghost{
+    boder: 1px solid rgba(240,236,228,0.2)
+    color:var(--text)
+    padding: 13px 32px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight; 500;
+    letter-spacing: 2px;
+    text-transform;uppercase;
+    text-decoration: none;
+    display: inline-block;
+    
+}
